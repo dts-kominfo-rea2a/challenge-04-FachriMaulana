@@ -8,7 +8,14 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = null;
+const createDate = function (dates) {
+  const tgl = [];
+  for (let counter = 0; counter < dates.length; counter++) {
+    tgl.push(Date.parse(dates[counter]) / 1000);
+
+    return tgl.toString();
+  }
+};
 
 // ! JANGAN DIMODIFIKASI
 (() => {
