@@ -13,7 +13,11 @@ const createDate = function (dates, counter) {
   for (let counter = 0; counter < dates.length; counter++) {
     tgl.push(Date.parse(dates[counter]) / 1000);
   }
-  return tgl.toString();
+  if (counter == null) {
+    return tgl.sort().join("-").toString();
+  } else {
+    return tgl.toString();
+  }
 };
 
 // ! JANGAN DIMODIFIKASI
