@@ -16,7 +16,7 @@ const createDate = function (dates, counter) {
   if (counter == null) {
     return tgl.sort().join("-").toString();
   } else {
-    return tgl.toString();
+    return tgl[counter].toString();
   }
 };
 
